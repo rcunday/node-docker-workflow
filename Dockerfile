@@ -6,8 +6,13 @@ RUN apk add --update \
     curl \
     nano
 
-COPY simple.js /usr/local/bin
-RUN chmod +x /usr/local/bin/simple.js
+WORKDIR /usr/src/app
 
-ENTRYPOINT ["/usr/local/bin/simple.js"]
-CMD ["/bin/bash"]
+COPY simple.js ./
+COPY package*.json ./
+
+RUN npm install
+
+COPY . .
+
+CMD ["node","simple.js"]
