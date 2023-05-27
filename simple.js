@@ -1,0 +1,1 @@
+console.log("This is a simple node script called from a container image.")
