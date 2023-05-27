@@ -1,0 +1,15 @@
+{
+  "name": "@rcunday/node-docker-workflow-package",
+  "version": "1.0.0",
+  "description": "sample github workflow using nodejs",
+  "main": "simple.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcunday/node-docker-workflow.git"
+  },
+  "author": "rcunday",
+  "license": "ISC"
+}
